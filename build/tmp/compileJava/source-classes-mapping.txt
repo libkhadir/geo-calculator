@@ -1,0 +1,10 @@
+com/github/libkhadir/utils/MathHelper.java
+ com.github.libkhadir.utils.MathHelper
+com/github/libkhadir/model/Point.java
+ com.github.libkhadir.model.Point
+com/github/libkhadir/utils/TranslationHelper.java
+ com.github.libkhadir.utils.TranslationHelper
+com/github/libkhadir/ui/CalculatorFrame.java
+ com.github.libkhadir.ui.CalculatorFrame
+com/github/libkhadir/GeoCalculatorApp.java
+ com.github.libkhadir.GeoCalculatorApp
