@@ -43,6 +43,6 @@ public class CalculateAction implements MouseListener {
     private void refresh() {
         double distance = MathHelper.distance(new Point(originLatitudeActionListener.getValue(), originLongitudeActionListener.getValue()),
                 new Point(destinationLatitudeActionListener.getValue(), destinationLongitudeActionListener.getValue()));
-        this.resultLabel.setText(resultLabel.getText() + " : " + distance);
+        this.resultLabel.setText(resultLabel.getText() + " " + distance + "km");
     }
 }

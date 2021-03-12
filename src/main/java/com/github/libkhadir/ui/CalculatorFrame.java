@@ -32,9 +32,11 @@ public class CalculatorFrame extends JFrame {
         JPanel originPanel = new JPanel();
         originPanel.setLayout(new GridLayout(2, 1));
         JTextField originLatitudeField = new JTextField();
+        originLatitudeField.setToolTipText("latitude");
         originLatitudeActionListener = new EditAction(originLatitudeField);
         originLatitudeField.getDocument().addDocumentListener(originLatitudeActionListener);
         JTextField originLongitudeField = new JTextField();
+        originLongitudeField.setToolTipText("longitude");
         originLongitudeActionListener = new EditAction(originLongitudeField);
         originLongitudeField.getDocument().addDocumentListener(originLongitudeActionListener);
         originPanel.add(originLatitudeField);
@@ -46,9 +48,11 @@ public class CalculatorFrame extends JFrame {
         JPanel destinationPanel = new JPanel();
         destinationPanel.setLayout(new GridLayout(2, 1));
         JTextField destinationLatitudeField = new JTextField();
+        destinationLatitudeField.setToolTipText("latitude");
         destinationLatitudeActionListener = new EditAction(destinationLatitudeField);
         destinationLatitudeField.getDocument().addDocumentListener(destinationLatitudeActionListener);
         JTextField destinationLongitudeField = new JTextField();
+        destinationLongitudeField.setToolTipText("longitude");
         destinationLongitudeActionListener = new EditAction(destinationLongitudeField);
         destinationLatitudeField.getDocument().addDocumentListener(destinationLongitudeActionListener);
         destinationPanel.add(destinationLatitudeField);
