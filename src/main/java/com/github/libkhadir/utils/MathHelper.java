@@ -11,7 +11,6 @@ import com.github.libkhadir.model.Point;
  */
 public class MathHelper {
     public static final double RADIUS = 6378;//km
-    public static final double MAX_WEIGHT = 10000;//kg
 
     public static double distance(Point p1, Point p2) {
         return distance(p1.getLatitude(), p1.getLongitude(), p2.getLatitude(), p2.getLongitude(), "K");
