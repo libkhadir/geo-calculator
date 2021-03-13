@@ -1,4 +1,4 @@
 # geo-calculator
 
-# pre-requestics
+# requirements
 - jdk 8 minimum
