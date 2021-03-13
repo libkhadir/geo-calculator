@@ -2,6 +2,11 @@ package com.github.libkhadir.utils;
 
 import com.github.libkhadir.model.Point;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 /**
  * Util class for calculating distance between two points using latitude and longitude coordinates
  * unit k for kilometers
@@ -10,10 +15,25 @@ import com.github.libkhadir.model.Point;
  * @author tkhadir
  */
 public class MathHelper {
-    public static final double RADIUS = 6378;//km
+    private static final String KM_UNIT = "K";
+
+    public static String[][] distances(List<String> lines) {
+        String[][] result = new String[lines.size()][5];
+        IntStream.range(0, lines.size()).forEach(i -> {
+            result[i] = new String[]{lines.get(i).split(";")[0], lines.get(i).split(";")[1],
+                                     lines.get(i).split(";")[2], lines.get(i).split(";")[3],
+                                     distance(lines.get(i).split(";")[0], lines.get(i).split(";")[1], lines.get(i).split(";")[2], lines.get(i).split(";")[3])
+            };
+        });
+        return result;
+    }
+
+    public static String distance(String lat1, String lon1, String lat2, String lon2) {
+        return String.valueOf(distance(Double.valueOf(lat1), Double.valueOf(lon1), Double.valueOf(lat2), Double.valueOf(lon2), KM_UNIT));
+    }
 
     public static double distance(Point p1, Point p2) {
-        return distance(p1.getLatitude(), p1.getLongitude(), p2.getLatitude(), p2.getLongitude(), "K");
+        return distance(p1.getLatitude(), p1.getLongitude(), p2.getLatitude(), p2.getLongitude(), KM_UNIT);
     }
 
     public static double distance(double lat1, double lon1, double lat2, double lon2, String unit) {

@@ -1,14 +1,20 @@
-com/github/libkhadir/utils/TranslationHelper.java
- com.github.libkhadir.utils.TranslationHelper
-com/github/libkhadir/utils/MathHelper.java
- com.github.libkhadir.utils.MathHelper
-com/github/libkhadir/actions/EditAction.java
- com.github.libkhadir.actions.EditAction
-com/github/libkhadir/model/Point.java
- com.github.libkhadir.model.Point
-com/github/libkhadir/GeoCalculatorApp.java
- com.github.libkhadir.GeoCalculatorApp
 com/github/libkhadir/ui/CalculatorFrame.java
  com.github.libkhadir.ui.CalculatorFrame
+com/github/libkhadir/utils/TranslationHelper.java
+ com.github.libkhadir.utils.TranslationHelper
+com/github/libkhadir/GeoCalculatorApp.java
+ com.github.libkhadir.GeoCalculatorApp
+com/github/libkhadir/model/Point.java
+ com.github.libkhadir.model.Point
+com/github/libkhadir/utils/MathHelper.java
+ com.github.libkhadir.utils.MathHelper
 com/github/libkhadir/actions/CalculateAction.java
  com.github.libkhadir.actions.CalculateAction
+com/github/libkhadir/actions/EditAction.java
+ com.github.libkhadir.actions.EditAction
+com/github/libkhadir/utils/FileHelper.java
+ com.github.libkhadir.utils.FileHelper
+com/github/libkhadir/ui/MassUploadFrame.java
+ com.github.libkhadir.ui.MassUploadFrame
+com/github/libkhadir/actions/UploadAction.java
+ com.github.libkhadir.actions.UploadAction

@@ -2,6 +2,7 @@ package com.github.libkhadir.ui;
 
 import com.github.libkhadir.actions.CalculateAction;
 import com.github.libkhadir.actions.EditAction;
+import com.github.libkhadir.actions.UploadAction;
 import com.github.libkhadir.utils.TranslationHelper;
 
 import javax.swing.*;
@@ -62,16 +63,19 @@ public class CalculatorFrame extends JFrame {
 
     private JPanel initResultPanel() {
         JPanel resultPanel = new JPanel();
-        resultPanel.setLayout(new GridLayout(2, 1));
+        resultPanel.setLayout(new GridLayout(3, 1));
         JButton calculateButton = new JButton(TranslationHelper.getMessage("app.calculate"));
+        JButton uploadButton = new JButton(TranslationHelper.getMessage("app.upload"));
         JLabel resultLabel = new JLabel(TranslationHelper.getMessage("app.result"));
         resultPanel.add(calculateButton);
+        resultPanel.add(uploadButton);
         resultPanel.add(resultLabel);
         calculateButton.addMouseListener(new CalculateAction(originLatitudeActionListener,
                                                             originLongitudeActionListener,
                                                             destinationLatitudeActionListener,
                                                             destinationLongitudeActionListener,
                                                             resultLabel));
+        uploadButton.addMouseListener(new UploadAction());
         return resultPanel;
     }
 }
