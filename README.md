@@ -5,6 +5,6 @@
 
 # demo
 
-![demo](main.PNG)
-![demo](uploadfile.PNG)
-![demo](result.PNG)
+![demo](./demo/main.PNG)
+![demo](./demo/uploadfile.PNG)
+![demo](./demo/result.PNG)
